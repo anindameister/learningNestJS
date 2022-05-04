@@ -1,1 +1,2 @@
 # learningNestJS
+- check node availability
