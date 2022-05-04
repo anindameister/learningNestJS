@@ -83,4 +83,9 @@ export class ItemsController {
 ```
 ![POST](https://github.com/anindameister/learningNestJS/blob/main/photos/7.PNG)
 
+- we need to send data through POST and in Nest, we need to create a `DTO` - a `data transfer object`
+
+![DTO](https://github.com/anindameister/learningNestJS/blob/main/photos/8.PNG)
+
+
 
