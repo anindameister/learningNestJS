@@ -29,3 +29,21 @@ nest --version
 - and we want a controller called items
 - we are dealing with items which would have a name, description and a quantity. 
 - as result of the command `nest g controller items`, we got a folder called items and anything to do with `items` would go into the folder called `items`
+- it also created a controller file under the folder items named `items.controller.ts` and a spec file for testing `but we are not gonna deal with that as of right now`
+- `@` symbol is a `decorator` and we would see that all over the place when we're using typescript.
+- These decorators are basically used for metadeta and so on
+- we have class in the code now
+```
+import { Controller } from '@nestjs/common';
+
+@Controller('items')
+export class ItemsController {}
+```
+- we're going to create functions inside our class named `ItemsController`
+- we need to start the server now, using `yarn`
+- `https://classic.yarnpkg.com/en/docs/cli/run`
+1. `yarn run`
+2. `nest start`
+3. check out the postman output ![postman](https://github.com/anindameister/learningNestJS/blob/main/photos/4.PNG)
+4. this diagram would show `yarn` ![yarn](https://github.com/anindameister/learningNestJS/blob/main/photos/5.PNG)
+
