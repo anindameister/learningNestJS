@@ -47,3 +47,21 @@ export class ItemsController {}
 3. check out the postman output ![postman](https://github.com/anindameister/learningNestJS/blob/main/photos/4.PNG)
 4. this diagram would show `yarn` ![yarn](https://github.com/anindameister/learningNestJS/blob/main/photos/5.PNG)
 
+Now, if we go to `/items` then there's nothing but we need to go to `/items` and get the desired output
+- right now `/items` is giving `404 not found`
+- now we have to `create an endpoint` and for that we need decorators
+- let's use `nest start --watch`
+- moving on, with the below code, we have the postman output
+```
+import { Controller, Get } from '@nestjs/common';
+
+@Controller('items')
+export class ItemsController {
+  @Get()
+  getItems(): string {
+    return 'This action returns all items';
+  }
+}
+```
+![items](https://github.com/anindameister/learningNestJS/blob/main/photos/6.PNG)
+
