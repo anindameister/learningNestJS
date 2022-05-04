@@ -87,5 +87,33 @@ export class ItemsController {
 
 ![DTO](https://github.com/anindameister/learningNestJS/blob/main/photos/8.PNG)
 
+- created a folder named `dto` inside the `items` folder
+- inside that we created `create-item-dto.ts`
+
+- The next `POST` took a lot of effort
+```
+import { Controller, Get, Post, Put, Delete, Body } from '@nestjs/common';
+import { CreateItemDto } from './dto/create-item-dto';
+
+@Controller('items')
+export class ItemsController {
+  @Get()
+  getItems(): string {
+    return 'This action returns all items';
+  }
+//   @Post()
+//   create(): string {
+//     return 'This action adds an item';
+//   }
+  @Post()
+  create(@Body() createItemDto: CreateItemDto): string {
+    return `Name: ${createItemDto.name} Description: ${createItemDto.description} Price: ${createItemDto.qty}`;
+  }
+
+}
+```
+![post for sending data, took some efforts](https://github.com/anindameister/learningNestJS/blob/main/photos/9.PNG)
+
+
 
 
