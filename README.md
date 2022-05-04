@@ -114,6 +114,35 @@ export class ItemsController {
 ```
 ![post for sending data, took some efforts](https://github.com/anindameister/learningNestJS/blob/main/photos/9.PNG)
 
+- getting back to `GET` for an `id`
+```
+import { Controller, Get, Post, Put, Delete, Body, Param} from '@nestjs/common';
+import { CreateItemDto } from './dto/create-item-dto';
 
+@Controller('items')
+export class ItemsController {
+  @Get()
+  getItems(): string {
+    return 'This action returns all items';
+  }
+//   @Post()
+//   create(): string {
+//     return 'This action adds an item';
+//   }
+  @Post()
+  create(@Body() createItemDto: CreateItemDto): string {
+    return `Name: ${createItemDto.name} Description: ${createItemDto.description} Price: ${createItemDto.qty}`;
+  }
+
+  @Get(':id')
+  findOne(@Param() param): string {
+    return `Item ${param.id}`;
+  }
+
+
+}
+```
+
+![getting back to get for an id](https://github.com/anindameister/learningNestJS/blob/main/photos/10.PNG)
 
 
