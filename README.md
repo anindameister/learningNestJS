@@ -65,3 +65,22 @@ export class ItemsController {
 ```
 ![items](https://github.com/anindameister/learningNestJS/blob/main/photos/6.PNG)
 
+- `POST`
+```
+import { Controller, Get, Post, Put, Delete, Body } from '@nestjs/common';
+
+@Controller('items')
+export class ItemsController {
+  @Get()
+  getItems(): string {
+    return 'This action returns all items';
+  }
+  @Post()
+  create(): string {
+    return 'This action adds an item';
+  }
+}
+```
+![POST](https://github.com/anindameister/learningNestJS/blob/main/photos/7.PNG)
+
+
