@@ -158,3 +158,8 @@ export class ItemsController {
 
 ![a particular information](https://github.com/anindameister/learningNestJS/blob/main/photos/13.PNG)
 
+- had to restart the server just to implement `Delete` successfully
+
+![had to restart the server just to implement `Delete` successfully](https://github.com/anindameister/learningNestJS/blob/main/photos/14.PNG)
+
+
