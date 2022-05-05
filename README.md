@@ -324,6 +324,12 @@ export class ItemsService {
   //The resource is the data that is being manipulated by the controller.
 }
 ```
+- but before we proceed into the above part, we are gonna create a `module` in the `items` folder 
+- the name of the file is `items.module.ts`
+```
+//this file going to be setup, very similar to the app.module.ts
+//so we would copy the contents of the same file
+```
 - below is the code, being put in here because Miss Prettier is causing a pretty lot of problems
 ```
 import { Module } from '@nestjs/common';
@@ -337,11 +343,5 @@ import { ItemsService } from './items.service';
 export class ItemsModule {}
 ```
 
-- but before we proceed into the above part, we are gonna create a `module` in the `items` folder 
-- the name of the file is `items.module.ts`
-```
-//this file going to be setup, very similar to the app.module.ts
-//so we would copy the contents of the same file
-```
 
 
