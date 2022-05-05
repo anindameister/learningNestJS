@@ -309,4 +309,4 @@ export class ItemsController {
 # Now, we need a `service` in order to deal with the database and get the `actual data` and things like that.
 
 - command: `nest g service items`
-
+- as a result, we have a `items.service.ts` file
