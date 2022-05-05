@@ -310,3 +310,38 @@ export class ItemsController {
 
 - command: `nest g service items`
 - as a result, we have a `items.service.ts` file
+
+```
+import { Injectable } from '@nestjs/common';
+//Injectable is a decorator that marks a class as one that can be injected as a dependency into our constructor.
+
+@Injectable()
+export class ItemsService {
+  //in here, we are going to have a lot of functions that we are going to call from our controller
+  //what is a controller?
+  //A controller is a class that handles the HTTP requests for a particular resource.
+  //what is the particular resource?
+  //The resource is the data that is being manipulated by the controller.
+}
+```
+- below is the code, being put in here because Miss Prettier is causing a pretty lot of problems
+```
+import { Module } from '@nestjs/common';
+import { ItemsController } from './items.controller';
+import { ItemsService } from './items.service';
+@Module({
+  imports: [],
+  controllers: [ItemsController],
+  providers: [ItemsService],
+})
+export class ItemsModule {}
+```
+
+- but before we proceed into the above part, we are gonna create a `module` in the `items` folder 
+- the name of the file is `items.module.ts`
+```
+//this file going to be setup, very similar to the app.module.ts
+//so we would copy the contents of the same file
+```
+
+
