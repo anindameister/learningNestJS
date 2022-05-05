@@ -294,3 +294,15 @@ export class ItemsController {
 
 ![fixed the `POST` problem by restarting the server](https://github.com/anindameister/learningNestJS/blob/main/photos/19.PNG)
 
+- finally fixed the `PUT` problem with the below code
+
+```
+  @Put(':id')
+  update(@Body() updateItemDto: CreateItemDto): string {
+    return `Name: ${updateItemDto.name} Description: ${updateItemDto.description} Price: ${updateItemDto.qty}`;
+  }
+```
+- remember to get into the `watch` mode by `nest start --watch`
+
+![successful PUT](https://github.com/anindameister/learningNestJS/blob/main/photos/20.PNG)
+

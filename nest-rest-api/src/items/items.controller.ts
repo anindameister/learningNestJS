@@ -48,8 +48,8 @@ export class ItemsController {
   //   return `Item ${id} has been updated`;
   // }
   @Put(':id')
-  update(@Body() updateItemDto: CreateItemDto, @Param('id') id): string {
-    return `Update ${id} - Name: ${updateItemDto.name}`;
+  update(@Body() updateItemDto: CreateItemDto): string {
+    return `Name: ${updateItemDto.name} Description: ${updateItemDto.description} Price: ${updateItemDto.qty}`;
   }
 
   //created this post to help put but it didn't help so commenting this out
