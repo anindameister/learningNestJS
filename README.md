@@ -306,3 +306,5 @@ export class ItemsController {
 
 ![successful PUT](https://github.com/anindameister/learningNestJS/blob/main/photos/20.PNG)
 
+# Now, we need a `service` in order to deal with the database and get the `actual data` and things like that.
+
