@@ -145,4 +145,9 @@ export class ItemsController {
 
 ![getting back to get for an id](https://github.com/anindameister/learningNestJS/blob/main/photos/10.PNG)
 
+- starting of `day 2`
+- recollecting, where I left off yesterday
+
+![id = 1700](https://github.com/anindameister/learningNestJS/blob/main/photos/11.PNG)
+
 
