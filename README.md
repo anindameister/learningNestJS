@@ -289,3 +289,8 @@ export class ItemsController {
 ```
 
 ![problem and more problem](https://github.com/anindameister/learningNestJS/blob/main/photos/18.PNG)
+
+- fixed the `POST` problem by restarting the server
+
+![fixed the `POST` problem by restarting the server](https://github.com/anindameister/learningNestJS/blob/main/photos/19.PNG)
+
