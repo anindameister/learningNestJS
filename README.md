@@ -153,3 +153,8 @@ export class ItemsController {
 - shortend version works too
 
 ![shortend version works too](https://github.com/anindameister/learningNestJS/blob/main/photos/12.PNG)
+
+- a particular information 
+
+![a particular information](https://github.com/anindameister/learningNestJS/blob/main/photos/13.PNG)
+

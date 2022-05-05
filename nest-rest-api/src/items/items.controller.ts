@@ -25,6 +25,11 @@ export class ItemsController {
   findOne(@Param('id') id): string {
     return `Item ${id}`;
   }
+//for delete we need to pass the id
+  @Delete(':id') 
+  delete(@Param('id') id): string {
+    return `Item ${id} has been deleted`;
+  }
 
 
 }
