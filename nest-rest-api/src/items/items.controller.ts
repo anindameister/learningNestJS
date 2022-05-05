@@ -15,10 +15,15 @@ export class ItemsController {
   create(@Body() createItemDto: CreateItemDto): string {
     return `Name: ${createItemDto.name} Description: ${createItemDto.description} Price: ${createItemDto.qty}`;
   }
-
+//long version
+  // @Get(':id')
+  // findOne(@Param() param): string {
+  //   return `Item ${param.id}`;
+  // }
+//shortend version
   @Get(':id')
-  findOne(@Param() param): string {
-    return `Item ${param.id}`;
+  findOne(@Param('id') id): string {
+    return `Item ${id}`;
   }
 
 

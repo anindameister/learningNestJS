@@ -150,4 +150,6 @@ export class ItemsController {
 
 ![id = 1700](https://github.com/anindameister/learningNestJS/blob/main/photos/11.PNG)
 
+- shortend version works too
 
+![shortend version works too](https://github.com/anindameister/learningNestJS/blob/main/photos/12.PNG)
